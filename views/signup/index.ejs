@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>sign up page</title>
+	<link rel="stylesheet" href="https://stackpath.bootsdivapcdn.com/bootsdivap/4.5.2/css/bootsdivap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div class="signup">
+		<div class="image">
+			<img src="../../images/chat.svg" alt="">
+		</div>
+		<div class="form-content-signup ">
+		<form method="post">
+	
+				
+					<div>First Name: </div>
+					<div><input type="text" name="fname" value="<%= user.fname %>" required></div>
+					<% if(error.fname!= null){ %>
+					<div><%= error.fname.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>Last Name: </div>
+					<div> <input type="text" name="lname" value="<%= user.lname %>" required></div>
+					<% if(error.lname!= null){ %>
+					<div><%= error.lname.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>Prefered Username: </div>
+					<div> <input type="text" name="uname" value="<%= user.uname %>" required></div>
+					<% if(error.uname!= null){ %>
+					<div><%= error.uname.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>usertype:</div>
+					<div><select name="usertype">
+							<option value="">Select</option>
+							<option value="Shop Owner">Admin</option>
+						</select>
+					</div>
+					<% if(error.usertype!= null){ %>
+					<div><%= error.usertype.msg %></div>
+					<% } %>
+				</div><br>
+				<div>
+					<div>Father's Name: </div>
+					<div> <input type="text" name="fathersName" value="<%= user.fathersName %>" required></div>
+					<% if(error.fathersName!= null){ %>
+					<div><%= error.fathersName.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>Mail: </div>
+					<div> <input type="text" name="email" value="<%= user.email %>" required></div>
+					<% if(error.email!= null){ %>
+					<div><%= error.email.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>Phone No: </div>
+					<div> <input type="text" name="phone" value="<%= user.phone %>" required></div>
+					<% if(error.phone!= null){ %>
+					<div><%= error.phone.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>National ID: </div>
+					<div> <input type="text" name="nid" value="<%= user.nid %>" required></div>
+					<% if(error.nid!= null){ %>
+					<div><%= error.nid.msg %></div>
+					<% } %>
+				</div>
+				<div>
+					<div>Password: </div>
+					<div> <input type="password" name="password" value="<%= user.password %>" required></div>
+					<% if(error.password!= null){ %>
+					<div><%= error.password.msg %></div>
+					<% } %>
+	
+				</div>
+				<div>
+					<div>Confirm Password:</div>
+					<div> <input type="password" name="cpassword" value="<%= user.cpassword %>" required></div>
+					<% if(error.cpassword!= null){ %>
+					<div><%= error.cpassword.msg %></div>
+					<% } %>
+				</div>
+			<input type="submit" class="btn btn-primary" name="" value="Submit">
+		
+		</form>
+	</div>
+	</div>
+	<a href="/login">Already have account? clcik to Login</a>
+</body>
+
+</html>

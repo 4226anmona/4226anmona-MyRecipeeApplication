@@ -1,0 +1,98 @@
+body{
+  font-family: sans-serif;
+  text-align: center;
+}
+.welcome{
+  display: flex;
+  align-items: center;
+}
+.welcome-pic img{
+  margin-top: 20px;
+  width: 90%;
+}
+.welcome-pic{
+  margin-right: 110px;
+}
+.image img{
+  width: 17%;
+  margin-top: 20px;
+}
+.form-content{
+  margin-top: 30px;
+}
+.form-content-signup{
+  margin-top: 20px;
+}
+body{
+  text-align: center;
+}
+.navigation a{
+  text-decoration: none;
+  color: black;
+  border: 2px solid lightblue;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  border-radius: 2px;
+  padding-bottom: 5px;
+}
+.navigation a:hover{
+  text-decoration: none;
+  color: cadetblue;
+  background-color: lightgrey;
+}
+.navbar-style{
+  box-shadow: 0 5px 10px #efefef;
+}
+.navbar-header a h4{
+  font-weight: 200;
+}
+.navbar-nav{
+  display: flex;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  }
+  .header{
+      background-color: lightskyblue;
+  }
+  .shop{
+      display: flex;
+      margin-top: 30px;
+  }
+  .shop .card{
+      margin-right: 60px;
+  }
+  .add-shop img{
+      margin-top: 75px;
+  }
+  .navigation{
+    display: flex;
+    margin-left: 96px;
+    margin-top: 20px;
+  }
+  .navigation a{
+    margin-left: 52px;
+    margin-bottom: 30px;
+  }
+  .manager{
+    margin-left: 350px;
+  }
+  
+  .shopowner{
+    margin-left: 350px;
+  }
+  .profile{
+    margin-left: 300px;
+  }
+  .main{
+    margin-left: 260px;
+  }
+  .view{
+    margin-left: 300px;
+  }
